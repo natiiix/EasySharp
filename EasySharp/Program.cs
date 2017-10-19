@@ -29,7 +29,7 @@ namespace EasySharp
 
             using (StreamWriter sw = new StreamWriter(tempCSharpPath))
             {
-                sw.Write(new Parser(esharpLines).CSharpCode);
+                sw.Write(Parser.ConvertToCSharp(esharpLines));
             }
 
             // Show the C# code
